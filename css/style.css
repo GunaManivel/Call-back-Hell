@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#flag-container {
+    margin: 20px auto;
+}
+
+#flag {
+    display: none;
+    width: 150px;
+    height: 100px;
+    background-image: url('https://1.bp.blogspot.com/-m3SHVZBF1xs/YDbAycy_JzI/AAAAAAAA4Ok/J1W44Fj_lsExfGt0KMG_lNwBjvEoajqGwCLcBGAsYHQ/s0/Flag_of_India.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#countdown {
+    font-size: 2em;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#message {
+    font-size: 2em;
+    color: #008000;
+    /* Change color for message */
+    margin-top: 20px;
+    display: none;
+    /* Hide message initially */
+    animation: fadeIn 1s ease-in-out forwards;
+}
